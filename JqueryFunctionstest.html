@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="JQueryFunctionstest.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="heading">
+                <h1></h1>
+                <h1 style="display: none">What's</h1>
+                <h1 style="display: none">in the</h1>
+                <h1 style="display: none">Box?</h1>
+                <button>toggle</button>
+            </div>
+            <div id="theBox">
+                theBox
+                <div class="pitt"><img src="IMG_0208.gif"></div>
+            </div>
+            <script>
+                $("button").click(function(){
+                    $("h1").toggle();
+                }); 
+                    $(".pitt").hide();
+                    $( "#theBox" ).click(function(){
+                    $(".pitt").slideDown();
+                });                  
+                $( "#theBox" ).click(function(){
+                    $(".pitt").slideUp();
+                });         
+                $( "#theBox" ).click(function(){
+                    $(".pitt").fadeIn();
+                });      
+                $( "#theBox" ).click(function(){
+                    $(".pitt").fadeOut();
+                });
+            </script>
+        </div>
+    </div>
