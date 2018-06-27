@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Disappearing_Ninja.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="box1">
+            <img src="david_freese.gif" alt="David Freese">
+        </div>
+        <div id="box2">
+            <img src="david_freese.gif" alt="David Freese">
+        </div>
+        <div id="box3">
+            <img src="david_freese.gif" alt="David Freese">
+        </div>
+        <div id="box4">
+            <img src="david_freese.gif" alt="David Freese">
+        </div>
+        <div id="box5">
+            <img src="david_freese.gif" alt="David Freese">
+        </div>
+        <div id="box6">
+            <img src="david_freese.gif" alt="David Freese">
+        </div>
+        <div id="box7">
+            <img src="david_freese.gif" alt="David Freese">
+        </div>
+        <div id="box8">
+            <img src="david_freese.gif" alt="David Freese">
+        </div>
+        <button>Restore</button>
+    </div>
+    <script>
+        $( "#box1" ).click(function(){
+            $("#box1").hide();
+        });
+        $( "#box2" ).click(function(){
+            $("#box2").hide();
+        });
+        $( "#box3" ).click(function(){
+            $("#box3").hide();
+        });
+        $( "#box4" ).click(function(){
+            $("#box4").hide();
+        });
+        $( "#box5" ).click(function(){
+            $("#box5").hide();
+        });
+        $( "#box6" ).click(function(){
+            $("#box6").hide();
+        });
+        $( "#box7" ).click(function(){
+            $("#box7").hide();
+        });
+        $( "#box8" ).click(function(){
+            $("#box8").hide();
+        });
+        $("button").click(function(){
+            $("#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8").show();
+        });
+    </script>
+</body>
+</html>
