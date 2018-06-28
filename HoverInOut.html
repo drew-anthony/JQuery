@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Disappearing_Ninja.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div id="container">
+            <img src="david_freese.gif" alt="David Freese">
+        
+            <img src="david_freese.gif" alt="David Freese">
+        
+            <img src="david_freese.gif" alt="David Freese">
+        
+            <img src="david_freese.gif" alt="David Freese">
+       
+        
+            <img src="david_freese.gif" alt="David Freese">
+        
+        
+            <img src="david_freese.gif" alt="David Freese">
+        
+        
+            <img src="david_freese.gif" alt="David Freese">
+        
+        
+            <img src="david_freese.gif" alt="David Freese">
+        
+    </div>
+    <script>
+        $( "img" ).mouseover(function(){
+            this.src="./david_freese2.gif"
+        })
+            .mouseout(function(){
+                this.src="./david_freese.gif"
+        });
+    </script>
+</body>
+</html>
