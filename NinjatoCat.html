@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="NinjatoCat.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div id="container">
+            <img id="tog0" src="./cat0.png" alt="cat0">
+            <img id="tog1" src="./cat1.png" alt="cat1">
+            <img id="tog2" src="./ninja2.png" alt="ninja2">
+            <img id="tog3" src="./ninja3.png" alt="ninja3">
+            <img id="tog4" src="./ninja4.png" alt="ninja4">
+
+    </div>
+    <script>
+        var togSrc=["./cat0.png","./ninja0.png"];
+
+        $( "#tog0" ).click(function(){
+            this.src=togSrc.reverse()[0];
+        });
+        var togSrc1=["./cat1.png","./ninja1.png"];
+
+        $( "#tog1" ).click(function(){
+            this.src=togSrc1.reverse()[0];
+        });
+        var togSrc2=["./cat2.png","./ninja2.png"];
+
+        $( "#tog2" ).click(function(){
+            this.src=togSrc2.reverse()[0];
+        });
+        var togSrc3=["./cat3.png","./ninja3.png"];
+
+        $( "#tog3" ).click(function(){
+            this.src=togSrc3.reverse()[0];
+        });
+        var togSrc4=["./cat4.png","./ninja4.png"];
+
+        $( "#tog4" ).click(function(){
+            this.src=togSrc4.reverse()[0];
+        });
+    </script>
+</body>
+</html>
